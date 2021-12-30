@@ -1,6 +1,8 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
+import Config from 'react-native-config';
 import { ThemeProvider } from 'styled-components/native';
+import StorybookUI from './storybook'
 import theme  from './src/global/styles/theme';
 
 const App: React.FC = () => {
@@ -11,4 +13,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default Config.LOAD_STORYBOOK === 'true' ? StorybookUI : App
