@@ -5,5 +5,9 @@ export default {
         title: '#3D3D4D',
         titleLight: '#A0A0B2',
         shape: '#FFFFFF',
-    }
+    },
+    fonts: {
+        primary: 'Roboto-Regular',
+        bold: 'Roboto-Bold',
+    },
 }
