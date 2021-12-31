@@ -13,4 +13,12 @@ const App: React.FC = () => {
   );
 }
 
-export default Config.LOAD_STORYBOOK === 'true' ? StorybookUI : App
+const Storybook: React.FC = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <StorybookUI/>
+    </ThemeProvider>
+  );
+}
+
+export default Config.LOAD_STORYBOOK === 'true' ? Storybook : App
