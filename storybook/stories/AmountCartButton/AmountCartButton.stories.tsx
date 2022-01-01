@@ -8,9 +8,9 @@ import {CenterView} from '../CenterView';
 
 storiesOf('Amount CardButton', module)
   .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
-  .add('with text', () => (
-    <AmountCartButton />
+  .add('Plus', () => (
+    <AmountCartButton type='plus' />
   ))
-  .add('with some emoji', () => (
-    <AmountCartButton/>
+  .add('Minus', () => (
+    <AmountCartButton type='minus' />
   ));
