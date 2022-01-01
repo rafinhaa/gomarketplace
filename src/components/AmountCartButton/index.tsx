@@ -1,13 +1,22 @@
 import React from 'react';
+import { TouchableOpacityProps } from 'react-native';
 
 import {
     Button,
+    Icon
 } from './styles';
 
-const AmountCartButton: React.FC = () => {
+interface Props extends TouchableOpacityProps {
+    type: 'plus' | 'minus';
+}
+
+const AmountCartButton: React.FC<Props> = ({
+    type,
+    ...rest
+}) => {
     return (
-        <Button>
-            
+        <Button {...rest} >
+            <Icon type={type}  />
         </Button>
     );
 }
