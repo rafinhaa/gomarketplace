@@ -12,10 +12,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		174E2ED978494C6E9247A871 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA2BA58A89314359B013C57A /* Roboto-Regular.ttf */; };
-		6172F2D35A4C3AA820D92908 /* libPods-gomarketplace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-gomarketplace.a */; };
 		6E23F8D68D34407E8619AD52 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F92AE44734B94AE0BA424305 /* Roboto-Bold.ttf */; };
-		7EF68E3733C33B6898317E18 /* libPods-gomarketplace-gomarketplaceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-gomarketplace-gomarketplaceTests.a */; };
+		6EDAB5BD0B76F01AAF69082B /* libPods-gomarketplace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FA2552847657A25E14889F /* libPods-gomarketplace.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B7512329ED404CE8489D55D /* libPods-gomarketplace-gomarketplaceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F351EB457C0A8DDE6A2D72B9 /* libPods-gomarketplace-gomarketplaceTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +38,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gomarketplace/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = gomarketplace/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = gomarketplace/main.m; sourceTree = "<group>"; };
-		1D0AE47A65C8663E3B452821 /* Pods-gomarketplace-gomarketplaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace-gomarketplaceTests.release.xcconfig"; path = "Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests.release.xcconfig"; sourceTree = "<group>"; };
-		6423831EA8574132BED9D8CC /* libPods-gomarketplace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gomarketplace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C97AB639B58BBB4B15BBE30 /* Pods-gomarketplace-gomarketplaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace-gomarketplaceTests.debug.xcconfig"; path = "Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32FA2552847657A25E14889F /* libPods-gomarketplace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gomarketplace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C16E1E737D9BB0F1DB325DB /* Pods-gomarketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace.release.xcconfig"; path = "Target Support Files/Pods-gomarketplace/Pods-gomarketplace.release.xcconfig"; sourceTree = "<group>"; };
+		60CE5A9C0AA0352B4892B5A5 /* Pods-gomarketplace-gomarketplaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace-gomarketplaceTests.release.xcconfig"; path = "Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = gomarketplace/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABFE59519B596E51CEFDCCC0 /* libPods-gomarketplace-gomarketplaceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gomarketplace-gomarketplaceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2BA58A89314359B013C57A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		C0A881CF5CF3F2B244570E2A /* Pods-gomarketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace.debug.xcconfig"; path = "Target Support Files/Pods-gomarketplace/Pods-gomarketplace.debug.xcconfig"; sourceTree = "<group>"; };
-		D00AAFFCFCFDA5787532823F /* Pods-gomarketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace.release.xcconfig"; path = "Target Support Files/Pods-gomarketplace/Pods-gomarketplace.release.xcconfig"; sourceTree = "<group>"; };
+		BB7F075699D27CA275374F4C /* Pods-gomarketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace.debug.xcconfig"; path = "Target Support Files/Pods-gomarketplace/Pods-gomarketplace.debug.xcconfig"; sourceTree = "<group>"; };
+		C0341EAF8D515EFCCCCAA9C3 /* Pods-gomarketplace-gomarketplaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gomarketplace-gomarketplaceTests.debug.xcconfig"; path = "Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F351EB457C0A8DDE6A2D72B9 /* libPods-gomarketplace-gomarketplaceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gomarketplace-gomarketplaceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92AE44734B94AE0BA424305 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF68E3733C33B6898317E18 /* libPods-gomarketplace-gomarketplaceTests.a in Frameworks */,
+				8B7512329ED404CE8489D55D /* libPods-gomarketplace-gomarketplaceTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6172F2D35A4C3AA820D92908 /* libPods-gomarketplace.a in Frameworks */,
+				6EDAB5BD0B76F01AAF69082B /* libPods-gomarketplace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +104,22 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6423831EA8574132BED9D8CC /* libPods-gomarketplace.a */,
-				ABFE59519B596E51CEFDCCC0 /* libPods-gomarketplace-gomarketplaceTests.a */,
+				32FA2552847657A25E14889F /* libPods-gomarketplace.a */,
+				F351EB457C0A8DDE6A2D72B9 /* libPods-gomarketplace-gomarketplaceTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DA4B83178453D7900417BB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F075699D27CA275374F4C /* Pods-gomarketplace.debug.xcconfig */,
+				3C16E1E737D9BB0F1DB325DB /* Pods-gomarketplace.release.xcconfig */,
+				C0341EAF8D515EFCCCCAA9C3 /* Pods-gomarketplace-gomarketplaceTests.debug.xcconfig */,
+				60CE5A9C0AA0352B4892B5A5 /* Pods-gomarketplace-gomarketplaceTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -125,8 +137,8 @@
 				00E356EF1AD99517003FC87E /* gomarketplaceTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				E233CBF5F47BEE60B243DCF8 /* Pods */,
 				D733B0DC86B04E3392CDCFBE /* Resources */,
+				7DA4B83178453D7900417BB8 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -152,18 +164,6 @@
 			path = "";
 			sourceTree = "<group>";
 		};
-		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C0A881CF5CF3F2B244570E2A /* Pods-gomarketplace.debug.xcconfig */,
-				D00AAFFCFCFDA5787532823F /* Pods-gomarketplace.release.xcconfig */,
-				6C97AB639B58BBB4B15BBE30 /* Pods-gomarketplace-gomarketplaceTests.debug.xcconfig */,
-				1D0AE47A65C8663E3B452821 /* Pods-gomarketplace-gomarketplaceTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,12 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "gomarketplaceTests" */;
 			buildPhases = (
-				A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */,
+				17538D4C990975E25D6C2716 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				077E01280D4B4AD18B2E1770 /* [CP] Embed Pods Frameworks */,
-				4E62BDF20514810D028A5FBF /* [CP] Copy Pods Resources */,
+				173FD21526ED0B4DD4567B34 /* [CP] Embed Pods Frameworks */,
+				F1B2BD8B911A45385B7F301D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,14 +192,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "gomarketplace" */;
 			buildPhases = (
-				3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */,
+				BD64650B80551D993532E7DF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */,
-				ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */,
+				95FF8810526D19B336665410 /* [CP] Embed Pods Frameworks */,
+				5890420F164F6E6D015F1785 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,7 +282,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		077E01280D4B4AD18B2E1770 /* [CP] Embed Pods Frameworks */ = {
+		173FD21526ED0B4DD4567B34 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,46 +299,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-gomarketplace-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4E62BDF20514810D028A5FBF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */ = {
+		17538D4C990975E25D6C2716 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,7 +321,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADC9DDC32298B72B3CF5DC8E /* [CP] Copy Pods Resources */ = {
+		5890420F164F6E6D015F1785 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +338,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gomarketplace/Pods-gomarketplace-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */ = {
+		95FF8810526D19B336665410 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,6 +353,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gomarketplace/Pods-gomarketplace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD64650B80551D993532E7DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gomarketplace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B2BD8B911A45385B7F301D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gomarketplace-gomarketplaceTests/Pods-gomarketplace-gomarketplaceTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -446,7 +446,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-gomarketplace-gomarketplaceTests.debug.xcconfig */;
+			baseConfigurationReference = C0341EAF8D515EFCCCCAA9C3 /* Pods-gomarketplace-gomarketplaceTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -473,7 +473,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-gomarketplace-gomarketplaceTests.release.xcconfig */;
+			baseConfigurationReference = 60CE5A9C0AA0352B4892B5A5 /* Pods-gomarketplace-gomarketplaceTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -497,7 +497,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-gomarketplace.debug.xcconfig */;
+			baseConfigurationReference = BB7F075699D27CA275374F4C /* Pods-gomarketplace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -523,7 +523,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-gomarketplace.release.xcconfig */;
+			baseConfigurationReference = 3C16E1E737D9BB0F1DB325DB /* Pods-gomarketplace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
