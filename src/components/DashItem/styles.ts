@@ -4,8 +4,8 @@ export const Container = styled.View`
     background: ${({theme}) => theme.colors.shape};
     padding: 16px;
     border-radius: 5px;
-    height: 241px;
     width: 156px;
+    margin: 8px 8px;
 `;
 
 export const Title = styled.Text`
@@ -32,7 +32,7 @@ export const Header = styled.View`
 `;
 
 export const Footer = styled.View`
-    margin-top: 50px;
+    margin-top: 8px;
     flex-direction: row;
     justify-content: space-between;
 `;
