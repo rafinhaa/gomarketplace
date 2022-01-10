@@ -1,6 +1,11 @@
-import React, { useEffect } from 'react';
-import { FlatListProps } from 'react-native';
+import React, 
+    { 
+        useEffect, 
+        useState
+    }
+from 'react';
 import DashItem from '../../components/DashItem';
+import { api } from '../../services/api';
 
 import { 
     Container,
@@ -17,22 +22,13 @@ interface Product {
 
 const Dashboard: React.FC = () => {
 
-    const products: Product[] = [
-        {
-            id: '1',
-            title: 'Produto 1',
-            price: 'R$ 10,00',
-            image: 'https://picsum.photos/200/300',
-            quantity: '1',
-        },
-        {
-            id: '2',
-            title: 'Produto 2',
-            price: 'R$ 20,00',
-            image: 'https://picsum.photos/200/300',
-            quantity: '2',
-        }
-    ]
+    const [products, setProducts] = useState<Product[]>([]);
+
+    useEffect(() => {
+        api.get('/products').then(response => {
+            setProducts(response.data);
+        });
+    }, []);
 
     return (
         <Container>
