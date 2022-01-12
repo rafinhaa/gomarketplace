@@ -8,6 +8,19 @@ interface IProductAction {
 
 export const InitialState: AllProducts = {
     products: [],
+    totalItemCart: 0,
+    totalPriceCart: 0,
+};
+
+const totalItemCart = (cartProducts: CartProduct[]): number => {
+    return cartProducts.length;
+};
+
+
+const totalPriceCart = (cartProducts: CartProduct[]): number => {
+    return cartProducts.reduce((acc, product) => {
+        return acc + Number(product.price) * Number(product.countCart);
+    }, 0);
 };
 
 export const GlobalProducts: Reducer<AllProducts, IProductAction> = (state = InitialState, action) => {
@@ -34,6 +47,8 @@ export const GlobalProducts: Reducer<AllProducts, IProductAction> = (state = Ini
                 }
                 return {
                     ...state,
+                    totalItemCart: totalItemCart(newCart),
+                    totalPriceCart: totalPriceCart(newCart),
                     products: [...newCart],
                 }
             }

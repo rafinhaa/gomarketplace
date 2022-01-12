@@ -13,5 +13,7 @@ export interface CartProduct extends Product {
 }
 
 export interface AllProducts {
-    products: CartProduct[]
+    products: CartProduct[],
+    totalItemCart: number,
+    totalPriceCart: number
 }
