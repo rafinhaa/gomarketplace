@@ -5,3 +5,4 @@ import './CartItem/CartItem.stories';
 import './AddItemCart/AddItemCart.stories';
 import './DashItem/DashItem.stories';
 import './Header/Header.stories';
+import './FloatingCart/FloatingCart.stories';
