@@ -5,13 +5,17 @@ import StorybookUI from './storybook'
 import theme  from './src/global/styles/theme';
 import { NavigationContainer } from '@react-navigation/native';
 import AppRoutes from './src/routes/app.routes';
+import { Provider } from 'react-redux';
+import store from './src/store';
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <NavigationContainer>
-        <AppRoutes />
-      </NavigationContainer>
+      <Provider store={store}>
+        <NavigationContainer>
+          <AppRoutes />
+        </NavigationContainer>
+      </Provider>
     </ThemeProvider>
   );
 }
