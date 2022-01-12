@@ -1,5 +1,5 @@
 import { Reducer } from "react";
-import { AllProducts, ADD_PRODUCT, Product, CartProduct  } from "../types";
+import { AllProducts, ADD_PRODUCT, Product, CartProduct, REMOVE_PRODUCT  } from "../types";
 
 interface IProductAction {
     type: string;
@@ -44,6 +44,26 @@ export const GlobalProducts: Reducer<AllProducts, IProductAction> = (state = Ini
                         countCart: 1,
                     };
                     newCart.push(newProduct);
+                }
+                return {
+                    ...state,
+                    totalItemCart: totalItemCart(newCart),
+                    totalPriceCart: totalPriceCart(newCart),
+                    products: [...newCart],
+                }
+            }
+        case REMOVE_PRODUCT:
+            {
+                const product = action.payload.product;
+                const newCart = [...state.products];
+                const productExists = newCart.find(p => p.id === product.id);
+                if (productExists) {
+                    const amount = productExists.countCart - 1;
+                    if (amount === 0) {
+                        newCart.splice(newCart.indexOf(productExists), 1);
+                    } else {
+                        productExists.countCart = amount;
+                    }
                 }
                 return {
                     ...state,
