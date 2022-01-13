@@ -7,6 +7,8 @@ from 'react';
 import DashItem from '../../components/DashItem';
 import { api } from '../../services/api';
 import { Product } from '../../types';
+import { useDispatch } from 'react-redux';
+import { addProductCart } from '../../store/modules/products/actions';
 
 import { 
     Container,
@@ -14,6 +16,7 @@ import {
 } from './styles';
 
 const Dashboard: React.FC = () => {
+    const dispatch = useDispatch();
     const [products, setProducts] = useState<Product[]>([]);
     useEffect(() => {
         api.get('/products').then(response => {
@@ -25,8 +28,15 @@ const Dashboard: React.FC = () => {
         <Container>
             <Flatlist
                 data={products}
-                keyExtractor={(item: Product) => item.id}
-                renderItem={({ item }: {item: Product}) => <DashItem product={item} handleAddProductCart={() => console.log('clicou')}  />}
+                keyExtractor={item => item.id}
+                renderItem={({ item }) => (
+                    <DashItem 
+                        product={item} 
+                        handleAddProductCart={
+                            () => dispatch(addProductCart(item))
+                        }
+                    />
+                )}
             />
         </Container>
     );
