@@ -1,7 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+import { AppRoutesParamList } from '../types';
 
-const { Navigator, Screen } = createStackNavigator();
+const { Navigator, Screen } = createStackNavigator<AppRoutesParamList>();
 
 import Dashboard from '../screens/Dashboard';
 import Header from '../components/Header';
