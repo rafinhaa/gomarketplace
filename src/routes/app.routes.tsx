@@ -5,6 +5,7 @@ const { Navigator, Screen } = createStackNavigator();
 
 import Dashboard from '../screens/Dashboard';
 import Header from '../components/Header';
+import Cart from '../screens/Cart';
 
 import { useTheme } from 'styled-components';
 
@@ -23,6 +24,10 @@ const AppRoutes: React.FC = () => {
             <Screen
                 name="Dashboard"
                 component={Dashboard}
+            />
+            <Screen
+                name="Cart"
+                component={Cart}
             />
         </Navigator>
     );
