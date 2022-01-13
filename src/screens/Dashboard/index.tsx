@@ -14,6 +14,7 @@ import {
     Container,
     Flatlist,
 } from './styles';
+import FloatingCart from '../../components/FloatingCart';
 
 const Dashboard: React.FC = () => {
     const dispatch = useDispatch();
@@ -38,6 +39,7 @@ const Dashboard: React.FC = () => {
                     />
                 )}
             />
+            <FloatingCart />
         </Container>
     );
 } 
