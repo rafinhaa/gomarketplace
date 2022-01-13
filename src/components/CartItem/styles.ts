@@ -6,6 +6,7 @@ export const Container = styled.View`
     width: 100%;
     border-radius: 5px;
     flex-direction: row;
+    margin: 6px 0;
 `;
 
 export const Title = styled.Text`
