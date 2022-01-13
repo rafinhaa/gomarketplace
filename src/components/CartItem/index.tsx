@@ -19,7 +19,8 @@ interface ProductsProps {
     title: string,
     price: string,
     image: string,
-    quantity: string
+    quantify: string
+    countCart: number
 }
 
 interface Props {
@@ -33,6 +34,22 @@ const CartItem: React.FC<Props> = ({
     onClickAdd,
     onClickRemove,
 }) => {
+    const formattedPrice = (price: string) => {
+        return Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+        }).format(Number(price));
+    }
+
+    const formattedCountCart = (countCart: number) => {
+        const totalItem = Number(product.price) * countCart;
+        const formattedTotalItem = Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL',
+        }).format(totalItem);
+        return `${countCart}x ${formattedTotalItem}`;
+    }
+
   return (
     <Container>
             <Image source={{ uri: product.image }} />
@@ -41,8 +58,8 @@ const CartItem: React.FC<Props> = ({
                     <Title>{product.title}</Title>
                 </Header>
                 <Footer>
-                    <Price>{product.price}</Price>
-                    <Quantity>{product.quantity}</Quantity>
+                    <Price>{formattedPrice(product.price)}</Price>
+                    <Quantity>{formattedCountCart(product.countCart)}</Quantity>
                 </Footer>
             </TextWrapper>
             <CartButtonGroup>
