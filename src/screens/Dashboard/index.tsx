@@ -6,24 +6,15 @@ import React,
 from 'react';
 import DashItem from '../../components/DashItem';
 import { api } from '../../services/api';
+import { Product } from '../../types';
 
 import { 
     Container,
     Flatlist,
 } from './styles';
 
-interface Product {  
-    id: string,
-    title: string,
-    price: string,
-    image: string,
-    quantity: string
-}
-
 const Dashboard: React.FC = () => {
-
     const [products, setProducts] = useState<Product[]>([]);
-
     useEffect(() => {
         api.get('/products').then(response => {
             setProducts(response.data);
