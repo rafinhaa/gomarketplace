@@ -1,4 +1,5 @@
-import { Product, ADD_PRODUCT, REMOVE_PRODUCT} from '../types';
+import { ADD_PRODUCT, REMOVE_PRODUCT} from '../types';
+import { Product } from '../../../../types';
 
 export function addProductCart(product: Product) {
     return {

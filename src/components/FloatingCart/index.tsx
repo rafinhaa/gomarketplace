@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { IRootStore } from '../../store';
+import { IRootStore } from '../../types';
 
 import { 
     Button,
