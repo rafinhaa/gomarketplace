@@ -5,49 +5,49 @@
             "title": "Nome do produto 01",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 50,
-            "quantify": 10
+            "quantity": 10
         },
         {
             "id": "f259375d-b16a-45b2-acaf-81aa2db6551a",
             "title": "Nome do produto 02",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 60,
-            "quantify": 6
+            "quantity": 6
         },
         {
             "id": "0e82d37d-1f3f-41dd-914e-1be350d7b4f2",
             "title": "Nome do produto 03",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 70,
-            "quantify": 3
+            "quantity": 3
         },
         {
             "id": "e9936fbd-6a6c-46a3-ba30-c860354cc70b",
             "title": "Nome do produto 04",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 80,
-            "quantify": 2
+            "quantity": 2
         },
         {
             "id": "dfb6521f-8710-4423-a704-a25bf4f721d7",
             "title": "Nome do produto 05",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 220,
-            "quantify": 4
+            "quantity": 4
         },
         {
             "id": "1c87c710-3d21-4c41-8cbf-29b2e4eae3ad",
             "title": "Nome do produto 06",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 99,
-            "quantify": 8
+            "quantity": 8
         },
         {
             "id": "ba2f0d25-f0a0-486b-b873-80484253b54e",
             "title": "Nome do produto 07",
             "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
             "price": 140,
-            "quantify": 7
+            "quantity": 7
         }
     ]
 }
