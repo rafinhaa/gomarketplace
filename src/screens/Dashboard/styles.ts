@@ -1,13 +1,6 @@
 import styled from "styled-components/native";
 import { FlatList,FlatListProps } from "react-native";
-
-interface Product {  
-    id: string,
-    title: string,
-    price: string,
-    image: string,
-    quantity: string
-}
+import { Product } from "../../types";
 
 export const Container = styled.SafeAreaView`
     flex: 1;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import AmountCartButton from '../AmountCartButton';
+import { CartProduct } from '../../types';
 
 import { 
     Container,
@@ -14,17 +15,8 @@ import {
     Footer,
 } from './styles';
 
-interface ProductsProps {  
-    id: string,
-    title: string,
-    price: string,
-    image: string,
-    quantify: string
-    countCart: number
-}
-
 interface Props {
-    product: ProductsProps;
+    product: CartProduct;
     onClickAdd: () => void;
     onClickRemove: () => void;
 }

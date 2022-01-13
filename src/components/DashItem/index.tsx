@@ -1,6 +1,6 @@
 import React from 'react';
 import AddItemCart from '../AddItemCart';
-import DashItem from '../AmountCartButton';
+import { Product } from '../../types';
 
 import { 
     Container,
@@ -12,16 +12,8 @@ import {
     Content,
 } from './styles';
 
-interface ProductsProps {  
-    id: string,
-    title: string,
-    price: string,
-    image: string,
-    quantity: string
-}
-
 interface Props {
-    product: ProductsProps;
+    product: Product;
     handleAddProductCart: (id: string) => void;
 }
 

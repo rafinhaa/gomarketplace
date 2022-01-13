@@ -1,5 +1,6 @@
 import { Reducer } from "react";
-import { AllProducts, ADD_PRODUCT, Product, CartProduct, REMOVE_PRODUCT  } from "../types";
+import { ADD_PRODUCT, REMOVE_PRODUCT  } from "../types";
+import { Product, CartProduct, AllProducts } from '../../../../types';
 
 interface IProductAction {
     type: string;
