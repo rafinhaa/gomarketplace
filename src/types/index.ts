@@ -19,3 +19,8 @@ export interface AllProducts {
 export interface IRootStore {
     GlobalProducts: AllProducts
 };
+
+export type AppRoutesParamList = {
+    Dashboard: undefined;
+    Cart: undefined;
+};
