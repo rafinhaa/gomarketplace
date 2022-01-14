@@ -15,30 +15,53 @@ import {
     Flatlist,
 } from './styles';
 import FloatingCart from '../../components/FloatingCart';
+import { Text } from 'react-native';
+import { AxiosError } from 'axios';
 
 const Dashboard: React.FC = () => {
     const dispatch = useDispatch();
     const [products, setProducts] = useState<Product[]>([]);
-    useEffect(() => {
-        api.get('/products').then(response => {
+    const [loading, setLoading] = useState(false);
+    const [errorInfo, setErrorInfo] = useState('');
+
+    async function loadProducts() {
+        setLoading(true);
+        await api.get('/products').then(response => {
             setProducts(response.data);
-        });
+        }).catch((error: AxiosError) => {
+            setErrorInfo(error.message);
+        })
+        setLoading(false);
+    }
+
+    useEffect(() => {
+        loadProducts();
     }, []);
 
     return (
         <Container>
-            <Flatlist
-                data={products}
-                keyExtractor={item => item.id}
-                renderItem={({ item }) => (
-                    <DashItem 
-                        product={item} 
-                        handleAddProductCart={
-                            () => dispatch(addProductCart(item))
-                        }
-                    />
-                )}
-            />
+            {
+                loading ? (
+                    <Text>Carregando...</Text>
+                ) : (
+                    products.length > 0 ? (
+                        <Flatlist
+                            data={products}
+                            keyExtractor={item => item.id}
+                            renderItem={({ item }) => (
+                                <DashItem 
+                                    product={item} 
+                                    handleAddProductCart={
+                                        () => dispatch(addProductCart(item))
+                                    }
+                                />
+                            )}
+                        />
+                    ) : (
+                        <Text>{errorInfo}</Text>
+                    )
+                )
+            }
             <FloatingCart />
         </Container>
     );
