@@ -14,6 +14,7 @@ import {
     Header,
     Footer,
 } from './styles';
+import { formatValue } from '../../utils';
 
 interface Props {
     product: CartProduct;
@@ -26,19 +27,9 @@ const CartItem: React.FC<Props> = ({
     onClickAdd,
     onClickRemove,
 }) => {
-    const formattedPrice = (price: string) => {
-        return Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
-        }).format(Number(price));
-    }
-
     const formattedCountCart = (countCart: number) => {
         const totalItem = Number(product.price) * countCart;
-        const formattedTotalItem = Intl.NumberFormat('pt-BR', {
-            style: 'currency',
-            currency: 'BRL',
-        }).format(totalItem);
+        const formattedTotalItem = formatValue(totalItem);
         return `${countCart}x ${formattedTotalItem}`;
     }
 
@@ -50,7 +41,7 @@ const CartItem: React.FC<Props> = ({
                     <Title>{product.title}</Title>
                 </Header>
                 <Footer>
-                    <Price>{formattedPrice(product.price)}</Price>
+                    <Price>{formatValue(product.price)}</Price>
                     <Quantity>{formattedCountCart(product.countCart)}</Quantity>
                 </Footer>
             </TextWrapper>
