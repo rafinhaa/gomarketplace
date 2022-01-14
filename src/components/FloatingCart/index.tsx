@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { formatValue } from '../../utils';
 import { useSelector } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -22,13 +23,9 @@ const FloatingCart: React.FC = () => {
     const [formattedPrice, setFormattedPrice] = useState('R$ 0,00');
     const [formattedAmount, setFormattedAmount] = useState('Carrinho vazio');
 
-    useEffect(() => {        
-        setFormattedPrice(
-            Intl.NumberFormat('pt-BR', { 
-                    style: 'currency',
-                    currency: 'BRL' }
-                ).format(totalPriceCart)
-            );
+    useEffect(() => {   
+        const formattedValue = formatValue(totalPriceCart)     
+        setFormattedPrice(formattedValue);
     }, [totalPriceCart]);
 
     useEffect(() => {
