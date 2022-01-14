@@ -13,10 +13,11 @@ import { addProductCart } from '../../store/modules/products/actions';
 import { 
     Container,
     Flatlist,
+    TextProductEmpty,
 } from './styles';
 import FloatingCart from '../../components/FloatingCart';
-import { Text } from 'react-native';
 import { AxiosError } from 'axios';
+import Loader from '../../components/Loader';
 
 const Dashboard: React.FC = () => {
     const dispatch = useDispatch();
@@ -42,7 +43,7 @@ const Dashboard: React.FC = () => {
         <Container>
             {
                 loading ? (
-                    <Text>Carregando...</Text>
+                    <Loader />
                 ) : (
                     products.length > 0 ? (
                         <Flatlist
@@ -58,7 +59,7 @@ const Dashboard: React.FC = () => {
                             )}
                         />
                     ) : (
-                        <Text>{errorInfo}</Text>
+                        <TextProductEmpty>{errorInfo}</TextProductEmpty>
                     )
                 )
             }
