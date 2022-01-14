@@ -1,6 +1,7 @@
 import { Reducer } from "react";
 import { ADD_PRODUCT, REMOVE_PRODUCT  } from "../types";
 import { Product, CartProduct, AllProducts } from '../../../../types';
+import { Alert } from "react-native";
 
 interface IProductAction {
     type: string;
@@ -16,7 +17,6 @@ export const InitialState: AllProducts = {
 const totalItemCart = (cartProducts: CartProduct[]): number => {
     return cartProducts.length;
 };
-
 
 const totalPriceCart = (cartProducts: CartProduct[]): number => {
     return cartProducts.reduce((acc, product) => {
@@ -34,7 +34,10 @@ export const GlobalProducts: Reducer<AllProducts, IProductAction> = (state = Ini
                 const stock = Number(product.quantity);
                 const amount = productExists ? productExists.countCart + 1 : 1;
                 if (amount > stock) {
-                    console.log(`Quantidade solicitada não disponível no estoque.`);
+                    Alert.alert(
+                        'Ops!', 'Quantidade indisponível no estoque', 
+                        [{ text: 'OK' }]
+                    );
                     return state;
                 }
                 if (productExists) {
