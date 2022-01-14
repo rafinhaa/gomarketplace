@@ -16,8 +16,11 @@ const AppRoutes: React.FC = () => {
         <Navigator
             screenOptions={{
                 headerTitle: () => <Header />,
+                headerLeftLabelVisible: false,
+                headerTintColor: colors.title,
                 headerStyle: {
                     backgroundColor: colors.background,
+
                 },
             }}
             initialRouteName="Dashboard"
