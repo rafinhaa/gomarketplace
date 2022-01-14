@@ -1,6 +1,7 @@
 import React from 'react';
 import AddItemCart from '../AddItemCart';
 import { Product } from '../../types';
+import { formatValue } from '../../utils';
 
 import { 
     Container,
@@ -29,7 +30,7 @@ const CartItem: React.FC<Props> = ({
                 <Title>{product.title}</Title>
             </Header>
             <Footer>
-                <Price>{product.price}</Price>
+                <Price>{formatValue(product.price)}</Price>
                 <AddItemCart
                     onPress={() => handleAddProductCart(product.id)}
                 />
@@ -40,3 +41,7 @@ const CartItem: React.FC<Props> = ({
 }
 
 export default CartItem;
+
+function formattedValue(price: string): React.ReactNode {
+    throw new Error('Function not implemented.');
+}
