@@ -16,8 +16,8 @@
 
 <h1 align="center">
   <div style="display: flex; flex-direction: row;">
-    <img style="border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_1.png" />
-    <img style="border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_2.png" />
+    <img width="400" border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_1.png" />
+    <img width="400" style="border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_2.png" />
   <div>
 </h1>
 
