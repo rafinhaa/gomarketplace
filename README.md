@@ -15,9 +15,10 @@
 </h4>
 
 <h1 align="center">
+    <img width="200" style="border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/videos/demo.gif" />
   <div style="display: flex; flex-direction: row;">
-    <img width="400" border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_1.png" />
-    <img width="400" style="border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_2.png" />
+    <img width="200" border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_1.png" />
+    <img width="200" style="border-radius: 10px" height="auto" alt="Screenshot" title="Screenshot" src="docs/images/Screenshot_2.png" />
   <div>
 </h1>
 
@@ -71,6 +72,11 @@ yarn run ios
 ## ℹ️ Info
 ### Development setup
 Operating system: macOS 12.1 (Chip M1)
+
+⚠️ Caso o projeto não mostre os produtos, rode antes de iniciar o jsonserver:
+```bash
+adb reverse tcp:3333 tcp:3333 
+```
 
 ## 📄 Changelog
 
