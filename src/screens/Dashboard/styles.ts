@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { FlatList,FlatListProps } from "react-native";
+import { FlatList,FlatListProps, Platform } from "react-native";
 import { Product } from "../../types";
 
 export const Container = styled.SafeAreaView`
@@ -14,6 +14,7 @@ export const Flatlist = styled(FlatList as new (props: FlatListProps<Product>) =
     numColumns: 2,
 }))`
     flex: 1;
+    margin-bottom: ${ Platform.OS === 'ios' ? '45px' : '80px' };
 `;
 
 export const TextProductEmpty = styled.Text`
