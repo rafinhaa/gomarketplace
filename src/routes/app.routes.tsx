@@ -18,10 +18,10 @@ const AppRoutes: React.FC = () => {
                 headerTitle: () => <Header />,
                 headerLeftLabelVisible: false,
                 headerTintColor: colors.title,
+                headerTitleAlign: 'center',                
                 headerStyle: {
                     backgroundColor: colors.background,
-
-                },
+                }
             }}
             initialRouteName="Dashboard"
         >
